@@ -25,12 +25,12 @@ requirements:
     - {{ posix }}zip               # [win]
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
-    - r-base
+    - r-base {{ r_version }}
     - r-foreach >=1.2.0
     - r-iterators >=1.0.0
     - r-snow >=0.3.0
   run:
-    - r-base
+    - r-base {{ r_version }}
     - r-foreach >=1.2.0
     - r-iterators >=1.0.0
     - r-snow >=0.3.0
